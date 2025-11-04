@@ -13,6 +13,7 @@ let moved = false;
 let berry = false;
 let started = false;
 let dead = true;
+let data = JSON.parse(localStorage.getItem("snakeData"));
 let time = 0;
 let score = 0;
 let snake;
