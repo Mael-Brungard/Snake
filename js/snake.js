@@ -216,7 +216,7 @@ function SnakeDie(){
 // Affichage Text 
 function textRefresh(){
     const chrono = document.getElementById('chrono');
-    chrono.innerHTML = `Time : ${time.toFixed(1)}s <br> Score : ${score} // Best Score : ${data.best}`;
+    chrono.innerHTML = `Time : ${time.toFixed(1)}s <br> Score : ${score} // Best Score : ${data?.best}`;
 
 }
 
