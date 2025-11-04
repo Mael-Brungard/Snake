@@ -3,6 +3,7 @@ let data = JSON.parse(localStorage.getItem("snakeData"));
 document.addEventListener('DOMContentLoaded', () => {
     initialize();
     data = JSON.parse(localStorage.getItem("snakeData"));
+    textRefresh();
 });
 
 // Données modifiable
