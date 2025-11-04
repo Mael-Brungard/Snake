@@ -1,5 +1,8 @@
+let data = JSON.parse(localStorage.getItem("snakeData"));
+
 document.addEventListener('DOMContentLoaded', () => {
     initialize();
+    data = JSON.parse(localStorage.getItem("snakeData"));
 });
 
 // Données modifiable
@@ -13,7 +16,6 @@ let moved = false;
 let berry = false;
 let started = false;
 let dead = true;
-let data = JSON.parse(localStorage.getItem("snakeData"));
 let time = 0;
 let score = 0;
 let snake;
@@ -245,5 +247,5 @@ function save(tryScore){
         const firstdata = { best: tryScore };
         localStorage.setItem("snakeData", JSON.stringify(firstdata));
     }
-    
+    data = JSON.parse(localStorage.getItem("snakeData"));
 }
