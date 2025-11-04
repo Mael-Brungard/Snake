@@ -1,0 +1,42 @@
+/* Estilos básicos - Go Live Server */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 10px;
+}
+.cell {
+    width: 35px;
+    height: 35px;
+}
+.snake{
+    background-color: greenyellow;
+}
+.berry{
+    background-color: tomato;
+}
+button{
+    font-size: 1.5rem !important;
+}
+.On{
+    display: block !important;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+.overlay{
+    position: fixed;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: fit-content;
+}
