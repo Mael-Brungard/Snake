@@ -238,6 +238,12 @@ setInterval(gameLoop, tickSpeed);
 setInterval(refreshChrono, chronoTick);
 
 function save(tryScore){
-    if(data.best < tryScore) data = {best : tryScore};
-    localStorage.setItem("snakeData", JSON.stringify(data));
+    if(data){
+        if(data.best < tryScore) data = {best : tryScore};
+        localStorage.setItem("snakeData", JSON.stringify(data));
+    }else{
+        const firstdata = { best: tryScore };
+        localStorage.setItem("snakeData", JSON.stringify(firstdata));
+    }
+    
 }
